@@ -1,15 +1,14 @@
 <template>
-  <div>hi</div>
-  <Ben/>
+  <div>hi|
+    <router-link to="/">页面1</router-link>
+    <router-link to="/xxx">页面2</router-link>
+  </div>
+  <hr>
+  <router-view/>
 </template>
-
 <script>
-import Ben from './components/Ben.vue'
 
 export default {
   name: 'App',
-  components: {
-    Ben
-  }
 }
 </script>
