@@ -11,8 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25bc3d00-51b1-4721-8ee1-28c05bad4fbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/SwitchDemo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619720064201</updated>
       <workItem from="1619720065261" duration="2297000" />
-      <workItem from="1619763825100" duration="6104000" />
+      <workItem from="1619763825100" duration="7501000" />
     </task>
     <servers />
   </component>
@@ -84,9 +87,9 @@
       <screen x="0" y="25" width="1680" height="967" />
     </state>
     <state x="778" y="265" width="595" height="486" key="find.popup/0.25.1680.967@0.25.1680.967" timestamp="1619769391448" />
-    <state x="740" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1619764466885">
+    <state x="740" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1619770574373">
       <screen x="0" y="25" width="1680" height="967" />
     </state>
-    <state x="740" y="237" width="670" height="676" key="search.everywhere.popup/0.25.1680.967@0.25.1680.967" timestamp="1619764466885" />
+    <state x="740" y="237" width="670" height="676" key="search.everywhere.popup/0.25.1680.967@0.25.1680.967" timestamp="1619770574373" />
   </component>
 </project>
