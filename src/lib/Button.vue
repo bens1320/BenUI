@@ -1,5 +1,5 @@
 <template>
-  <button class="ben-button" :class="classes">
+  <button class="ben-button" :class="classes" :disabled="disabled">
     <slot/>
   </button>
 </template>
@@ -20,6 +20,10 @@ export default {
     level: {
       type: String,
       default: 'normal',
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
   },
   setup(props) {
@@ -43,6 +47,7 @@ $color: #333;
 $blue: #40a9ff;
 $radius: 4px;
 $red: red;
+$grey: grey;
 .ben-button {
   box-sizing: border-box;
   height: $h;
@@ -58,7 +63,7 @@ $red: red;
   border-radius: $radius;
   box-shadow: 0 1px 0 fade-out(black, 0.95);
   transition: background 250ms;
-  
+
   & + & {
     margin-left: 8px;
   }
@@ -167,6 +172,24 @@ $red: red;
       &:focus {
         color: darken($red, 10%);
       }
+    }
+  }
+
+  &.ben-theme-button {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+
+      &:hover {
+        border-color: $grey;
+      }
+    }
+  }
+
+  &.ben-theme-link, &.ben-theme-text {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
     }
   }
 }
