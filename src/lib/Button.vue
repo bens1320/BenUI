@@ -1,5 +1,6 @@
 <template>
   <button class="ben-button" :class="classes" :disabled="disabled">
+    <span v-if="loading" class="ben-loadingIndicator"></span>
     <slot/>
   </button>
 </template>
@@ -25,6 +26,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    loading: {
+      type: Boolean,
+      default: false
+    }
   },
   setup(props) {
     const {theme, size, level} = props;
@@ -192,5 +197,22 @@ $grey: grey;
       color: $grey;
     }
   }
+
+  > .ben-loadingIndicator{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 8px;
+    border-color: $blue $blue $blue transparent;
+    border-style: solid;
+    border-width: 2px;
+    animation: ben-spin 1s infinite linear;
+  }
+}
+
+@keyframes ben-spin {
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
 }
 </style>
