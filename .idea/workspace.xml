@@ -12,6 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25bc3d00-51b1-4721-8ee1-28c05bad4fbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SwitchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwitchDemo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/Switch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Switch.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +59,7 @@
       <updated>1619720064201</updated>
       <workItem from="1619720065261" duration="2297000" />
       <workItem from="1619763825100" duration="9154000" />
-      <workItem from="1619774401921" duration="4081000" />
+      <workItem from="1619774401921" duration="4571000" />
     </task>
     <servers />
   </component>
