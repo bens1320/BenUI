@@ -14,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SwitchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SwitchDemo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/Switch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Switch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <updated>1619720064201</updated>
       <workItem from="1619720065261" duration="2297000" />
       <workItem from="1619763825100" duration="9154000" />
-      <workItem from="1619774401921" duration="4571000" />
+      <workItem from="1619774401921" duration="5708000" />
     </task>
     <servers />
   </component>
@@ -88,13 +89,15 @@
       <screen x="0" y="25" width="1680" height="967" />
     </state>
     <state x="296" y="161" key="SettingsEditor/0.25.1680.967@0.25.1680.967" timestamp="1619768761851" />
-    <state x="778" y="265" width="595" height="486" key="find.popup" timestamp="1619769391448">
-      <screen x="0" y="25" width="1680" height="967" />
+    <state x="889" y="272" width="680" height="502" key="find.popup" timestamp="1620064486206">
+      <screen x="0" y="25" width="1920" height="997" />
     </state>
     <state x="778" y="265" width="595" height="486" key="find.popup/0.25.1680.967@0.25.1680.967" timestamp="1619769391448" />
-    <state x="740" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1619770574373">
-      <screen x="0" y="25" width="1680" height="967" />
+    <state x="889" y="272" width="680" height="502" key="find.popup/0.25.1920.997@0.25.1920.997" timestamp="1620064486206" />
+    <state x="846" y="244" width="766" height="697" key="search.everywhere.popup" timestamp="1620064054552">
+      <screen x="0" y="25" width="1920" height="997" />
     </state>
     <state x="740" y="237" width="670" height="676" key="search.everywhere.popup/0.25.1680.967@0.25.1680.967" timestamp="1619770574373" />
+    <state x="846" y="244" width="766" height="697" key="search.everywhere.popup/0.25.1920.997@0.25.1920.997" timestamp="1620064054552" />
   </component>
 </project>
