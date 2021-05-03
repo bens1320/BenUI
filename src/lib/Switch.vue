@@ -1,5 +1,5 @@
 <template>
-  <button @click="toggle" :class="{checked: value}"><span></span></button>
+  <button class="ben-switch" @click="toggle" :class="{'ben-checked': value}"><span></span></button>
 </template>
 
 <script lang="ts">
@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 $h: 22px;
 $h2: $h - 4px;
-button {
+.ben-switch {
   height: $h;
   width: $h*2;
   border: none;
@@ -39,7 +39,7 @@ button {
     transition: all 250ms;
   }
 
-  &.checked {
+  &.ben-checked {
     background: #1890ff;
 
     > span {
@@ -57,7 +57,7 @@ button {
     }
   }
 
-  &.checked:active {
+  &.ben-checked:active {
     > span {
       width: $h2 + 4px;
       margin-left: -4px;
