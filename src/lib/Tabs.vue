@@ -1,12 +1,21 @@
 <template>
   <div class="ben-tabs">
     <div class="ben-tabs-nav">
-      <div class="ben-tabs-nav-item" :class="{selected: t === selected}" v-for="(t,index) in titles" :key="index">
+      <div
+          class="ben-tabs-nav-item"
+          :class="{selected: t === selected}"
+          v-for="(t,index) in titles" :key="index"
+          @click="select(t)"
+      >
         {{t}}
       </div>
     </div>
     <div class="ben-tabs-content">
-      <component class="ben-tabs-content-item" v-for="(c,index) in defaults" :is="c" :key="index"/>
+      <component
+          class="ben-tabs-content-item"
+          :class="{selected: c.props.title === selected}"
+          v-for="(c,index) in defaults" :is="c" :key="index"
+      />
     </div>
   </div>
 </template>
@@ -30,7 +39,11 @@ export default {
     const titles = defaults.map((tag) => {
       return tag.props.title;
     });
-    return {defaults, titles};
+
+    const select = (title: string) => {
+      context.emit('update:selected', title)
+    }
+    return {defaults, titles, select};
   }
 };
 </script>
@@ -62,6 +75,14 @@ $border-color: #d9d9d9;
 
   &-content {
     padding: 8px 0;
+
+    &-item {
+      display: none;
+
+      &.selected {
+        display: block;
+      }
+    }
   }
 }
 </style>
