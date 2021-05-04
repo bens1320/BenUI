@@ -10,14 +10,17 @@
       <p>hi2</p>
     </template>
   </Dialog>
-  <Button @click="toggle">切换</Button>
-
+  <Button @click="toggle">Show</Button>
+  <h1>示例2</h1>
+  <Button @click="showDialog">show</Button>
 </template>
 
 <script lang="ts">
-import {ref} from 'vue';
 import Dialog from '../lib/Dialog.vue';
 import Button from '../lib/Button.vue';
+import {ref} from 'vue';
+import {openDialog} from '../lib/openDialog.ts';
+
 
 export default {
   components: {
@@ -35,7 +38,20 @@ export default {
 
     const f2 = () => {
     };
-    return {x, toggle, f1, f2};
+
+    const showDialog = () =>{
+      openDialog({
+        title: '标题',
+        content: '你好',
+        ok(){
+          console.log('ok');
+        },
+        cancel(){
+          console.log('cancel');
+        }
+      })
+    }
+    return {x, toggle, f1, f2, showDialog};
   }
 };
 
