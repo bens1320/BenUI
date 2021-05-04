@@ -3,10 +3,12 @@
     <div class="ben-dialog-overlay" @click="onClickOverlay"></div>
     <div class="ben-dialog-wrapper">
       <div class="ben-dialog">
-        <header>标题 <span class="ben-dialog-close" @click="close"></span></header>
+        <header>
+          <slot name="title"/>
+          <span class="ben-dialog-close" @click="close"></span>
+        </header>
         <main>
-          <p>第一行字</p>
-          <p>第二行字</p>
+          <slot name="content"/>
         </main>
         <footer>
           <Button level="main" @click="ok">OK</Button>
@@ -50,13 +52,13 @@ export default {
       }
     };
     const ok = () => {
-      if(props.ok?.() !== false){
+      if (props.ok?.() !== false) {
         close();
       }
     };
 
     const cancel = () => {
-      context.emit('cancel')
+      context.emit('cancel');
       close();
     };
     return {close, onClickOverlay, ok, cancel};

@@ -1,7 +1,15 @@
 <template>
   <div>Dialog 示例</div>
   <h1>示例1</h1>
-  <Dialog v-model:visible="x" :ok="f1" :cancel="f2"/>
+  <Dialog v-model:visible="x" :ok="f1" :cancel="f2">
+    <template v-slot:title>
+      <strong>标题.</strong>
+    </template>
+    <template v-slot:content>
+      <p>hi</p>
+      <p>hi2</p>
+    </template>
+  </Dialog>
   <Button @click="toggle">切换</Button>
 
 </template>
