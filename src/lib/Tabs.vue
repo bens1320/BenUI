@@ -5,10 +5,12 @@
           class="ben-tabs-nav-item"
           :class="{selected: t === selected}"
           v-for="(t,index) in titles" :key="index"
+          :ref="el => {if(el)  navItems[index] = el}"
           @click="select(t)"
       >
         {{t}}
       </div>
+      <div class="ben-tabs-nav-indicator" ref="indicator"></div>
     </div>
     <div class="ben-tabs-content">
       <component
@@ -22,6 +24,7 @@
 
 <script lang="ts">
 import Tab from '../lib/Tab.vue';
+import {ref, onMounted} from 'vue'
 
 export default {
   props: {
@@ -30,7 +33,19 @@ export default {
     }
   },
   setup(props, context) {
+    const navItems = ref<HTMLDivElement[]>([])
+    const indicator = ref<HTMLDivElement>(null)
+    onMounted(()=>{
+      const divs = navItems.value
+      console.log({...divs});
+      const result = divs.filter(div => div.classList)[0]
+      console.log(result);
+      const {width} = result.getBoundingClientRect()
+      indicator.value.style.width = width + 'px'
+    })
+
     const defaults = context.slots.default();
+
     defaults.forEach((tag) => {
       if (tag.type !== Tab) {
         throw new Error('Tabs 子组件必须是Tab');
@@ -41,9 +56,9 @@ export default {
     });
 
     const select = (title: string) => {
-      context.emit('update:selected', title)
-    }
-    return {defaults, titles, select};
+      context.emit('update:selected', title);
+    };
+    return {defaults, titles, select, navItems, indicator};
   }
 };
 </script>
@@ -57,6 +72,7 @@ $border-color: #d9d9d9;
     display: flex;
     color: $color;
     border-bottom: 1px solid $border-color;
+    position: relative;
 
     &-item {
       padding: 8px 0;
@@ -70,6 +86,15 @@ $border-color: #d9d9d9;
       &.selected {
         color: $blue;
       }
+    }
+
+    &-indicator {
+      position: absolute;
+      height: 3px;
+      background: $blue;
+      left: 0;
+      bottom: -1px;
+      width: 100px;
     }
   }
 
