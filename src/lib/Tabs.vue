@@ -18,7 +18,8 @@ import {
   computed,
   ref,
   onMounted,
-  onUpdated
+  onUpdated,
+  watchEffect
 } from 'vue';
 
 export default {
@@ -31,27 +32,27 @@ export default {
     const selectedItem = ref<HTMLDivElement>(null);
     const indicator = ref<HTMLDivElement>(null);
     const container = ref<HTMLDivElement>(null);
-    const x = () => {
-      console.log('fuck!!!222');
-      const {
-        width
-      } = selectedItem.value.getBoundingClientRect();
-      indicator.value.style.width = width + 'px';
-      const {
-        left: left1
-      } = container.value.getBoundingClientRect();
-      const {
-        left: left2
-      } = selectedItem.value.getBoundingClientRect();
-      const left = left2 - left1;
-      console.log(selectedItem.value);
-      console.log(left, left1, left2);
+    onMounted(() => {
+      watchEffect(() => {
+        console.log('fuck!!!222');
+        const {
+          width
+        } = selectedItem.value.getBoundingClientRect();
+        indicator.value.style.width = width + 'px';
+        const {
+          left: left1
+        } = container.value.getBoundingClientRect();
+        const {
+          left: left2
+        } = selectedItem.value.getBoundingClientRect();
+        const left = left2 - left1;
+        console.log(selectedItem.value);
+        console.log(left, left1, left2);
 
-      indicator.value.style.left = left + 'px';
+        indicator.value.style.left = left + 'px';
 
-    }
-    onMounted(x);
-    onUpdated(x);
+      }, {flush: 'post'});
+    });
 
     const defaults = context.slots.default();
     defaults.forEach((tag) => {

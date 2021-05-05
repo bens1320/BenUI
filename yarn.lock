@@ -23,10 +23,15 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.12.0", "@babel/parser@^7.12.7", "@babel/parser@^7.13.9":
+"@babel/parser@^7.12.0", "@babel/parser@^7.13.9":
   version "7.13.16"
   resolved "https://registry.nlark.com/@babel/parser/download/@babel/parser-7.13.16.tgz#0f18179b0448e6939b1f3f5c4c355a3a9bcdfd37"
   integrity sha1-DxgXmwRI5pObHz9cTDVaOpvN/Tc=
+
+"@babel/parser@^7.12.7":
+  version "7.14.1"
+  resolved "https://registry.nlark.com/@babel/parser/download/@babel/parser-7.14.1.tgz#1bd644b5db3f5797c4479d89ec1817fe02b84c47"
+  integrity sha1-G9ZEtds/V5fER52J7BgX/gK4TEc=
 
 "@babel/types@^7.12.0", "@babel/types@^7.13.0":
   version "7.13.17"
@@ -86,7 +91,7 @@
 
 "@rollup/plugin-node-resolve@^10.0.0":
   version "10.0.0"
-  resolved "https://registry.npm.taobao.org/@rollup/plugin-node-resolve/download/@rollup/plugin-node-resolve-10.0.0.tgz#44064a2b98df7530e66acf8941ff262fc9b4ead8"
+  resolved "https://registry.nlark.com/@rollup/plugin-node-resolve/download/@rollup/plugin-node-resolve-10.0.0.tgz#44064a2b98df7530e66acf8941ff262fc9b4ead8"
   integrity sha1-RAZKK5jfdTDmas+JQf8mL8m06tg=
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
@@ -280,7 +285,7 @@
 
 "@vue/compiler-dom@3.0.11", "@vue/compiler-dom@^3.0.3":
   version "3.0.11"
-  resolved "https://registry.npm.taobao.org/@vue/compiler-dom/download/@vue/compiler-dom-3.0.11.tgz?cache=0&sync_timestamp=1617323042770&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcompiler-dom%2Fdownload%2F%40vue%2Fcompiler-dom-3.0.11.tgz#b15fc1c909371fd671746020ba55b5dab4a730ee"
+  resolved "https://registry.npm.taobao.org/@vue/compiler-dom/download/@vue/compiler-dom-3.0.11.tgz#b15fc1c909371fd671746020ba55b5dab4a730ee"
   integrity sha1-sV/ByQk3H9ZxdGAgulW12rSnMO4=
   dependencies:
     "@vue/compiler-core" "3.0.11"
@@ -426,7 +431,7 @@ bl@^4.1.0:
 
 bluebird@^3.7.2:
   version "3.7.2"
-  resolved "https://registry.npm.taobao.org/bluebird/download/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
+  resolved "https://registry.nlark.com/bluebird/download/bluebird-3.7.2.tgz?cache=0&sync_timestamp=1618847007562&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fbluebird%2Fdownload%2Fbluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha1-nyKcFb4nJFT/qXOs4NvueaGww28=
 
 brace-expansion@^1.1.7:
@@ -770,7 +775,7 @@ es-module-lexer@^0.3.25:
 
 esbuild@^0.8.12:
   version "0.8.57"
-  resolved "https://registry.nlark.com/esbuild/download/esbuild-0.8.57.tgz?cache=0&sync_timestamp=1619600925406&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fesbuild%2Fdownload%2Fesbuild-0.8.57.tgz#a42d02bc2b57c70bcd0ef897fe244766bb6dd926"
+  resolved "https://registry.nlark.com/esbuild/download/esbuild-0.8.57.tgz#a42d02bc2b57c70bcd0ef897fe244766bb6dd926"
   integrity sha1-pC0CvCtXxwvNDviX/iRHZrtt2SY=
 
 escape-html@^1.0.3:
@@ -861,7 +866,7 @@ fresh@~0.5.2:
 
 fs-extra@^9.0.1:
   version "9.1.0"
-  resolved "https://registry.npm.taobao.org/fs-extra/download/fs-extra-9.1.0.tgz?cache=0&sync_timestamp=1611075904174&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffs-extra%2Fdownload%2Ffs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
+  resolved "https://registry.nlark.com/fs-extra/download/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
   integrity sha1-WVRGDHZKjaIJS6NVS/g55rmnyG0=
   dependencies:
     at-least-node "^1.0.0"
@@ -1182,7 +1187,7 @@ isexe@^2.0.0:
 
 jest-worker@^26.2.1:
   version "26.6.2"
-  resolved "https://registry.npm.taobao.org/jest-worker/download/jest-worker-26.6.2.tgz?cache=0&sync_timestamp=1618267597097&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest-worker%2Fdownload%2Fjest-worker-26.6.2.tgz#7f72cbc4d643c365e27b9fd775f9d0eaa9c7a8ed"
+  resolved "https://registry.nlark.com/jest-worker/download/jest-worker-26.6.2.tgz#7f72cbc4d643c365e27b9fd775f9d0eaa9c7a8ed"
   integrity sha1-f3LLxNZDw2Xie5/XdfnQ6qnHqO0=
   dependencies:
     "@types/node" "*"
@@ -1513,7 +1518,7 @@ ora@^5.1.0:
 
 p-map-series@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.npm.taobao.org/p-map-series/download/p-map-series-2.1.0.tgz#7560d4c452d9da0c07e692fdbfe6e2c81a2a91f2"
+  resolved "https://registry.nlark.com/p-map-series/download/p-map-series-2.1.0.tgz#7560d4c452d9da0c07e692fdbfe6e2c81a2a91f2"
   integrity sha1-dWDUxFLZ2gwH5pL9v+biyBoqkfI=
 
 parent-module@^1.0.0:
@@ -1670,7 +1675,7 @@ postcss-value-parser@^4.1.0:
 
 postcss@^7.0.0, postcss@^7.0.1:
   version "7.0.35"
-  resolved "https://registry.nlark.com/postcss/download/postcss-7.0.35.tgz?cache=0&sync_timestamp=1619439997539&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpostcss%2Fdownload%2Fpostcss-7.0.35.tgz#d2be00b998f7f211d8a276974079f2e92b970e24"
+  resolved "https://registry.nlark.com/postcss/download/postcss-7.0.35.tgz?cache=0&sync_timestamp=1619440092393&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpostcss%2Fdownload%2Fpostcss-7.0.35.tgz#d2be00b998f7f211d8a276974079f2e92b970e24"
   integrity sha1-0r4AuZj38hHYonaXQHny6SuXDiQ=
   dependencies:
     chalk "^2.4.2"
@@ -1815,9 +1820,9 @@ rollup-pluginutils@^2.8.2:
     estree-walker "^0.6.1"
 
 rollup@^2.32.1:
-  version "2.46.0"
-  resolved "https://registry.nlark.com/rollup/download/rollup-2.46.0.tgz#8cacf89d2ee31a34755f1af40a665168f592b829"
-  integrity sha1-jKz4nS7jGjR1Xxr0CmZRaPWSuCk=
+  version "2.47.0"
+  resolved "https://registry.nlark.com/rollup/download/rollup-2.47.0.tgz#9d958aeb2c0f6a383cacc0401dff02b6e252664d"
+  integrity sha1-nZWK6ywPajg8rMBAHf8CtuJSZk0=
   optionalDependencies:
     fsevents "~2.3.1"
 
@@ -1846,9 +1851,9 @@ sass@1.26.10:
     chokidar ">=2.0.0 <4.0.0"
 
 selfsigned@^1.10.8:
-  version "1.10.8"
-  resolved "https://registry.npm.taobao.org/selfsigned/download/selfsigned-1.10.8.tgz#0d17208b7d12c33f8eac85c41835f27fc3d81a30"
-  integrity sha1-DRcgi30Swz+OrIXEGDXyf8PYGjA=
+  version "1.10.11"
+  resolved "https://registry.nlark.com/selfsigned/download/selfsigned-1.10.11.tgz#24929cd906fe0f44b6d01fb23999a739537acbe9"
+  integrity sha1-JJKc2Qb+D0S20B+yOZmnOVN6y+k=
   dependencies:
     node-forge "^0.10.0"
 
