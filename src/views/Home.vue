@@ -1,13 +1,26 @@
 <template>
-  <div class="topNavAndBanner">
-    <TopNav/>
-    <div class="banner">
-      <h1>奔奔UI</h1>
-      <h2>还不错的 UI 框架</h2>
-      <p class="actions">
-        <a href="">GitHub</a>
-        <router-link to="/doc">开始</router-link>
-      </p>
+  <div>
+    <div class="topNavAndBanner">
+      <TopNav/>
+      <div class="banner">
+        <h1>奔奔UI</h1>
+        <h2>还不错的 UI 框架</h2>
+        <p class="actions">
+          <a href="">GitHub</a>
+          <router-link to="/doc">开始</router-link>
+        </p>
+      </div>
+    </div>
+    <div class="features">
+      <svg class="icon">
+        <use xlink:href="#icon-Vue"></use>
+      </svg>
+      <svg class="icon">
+        <use xlink:href="#icon-typescript"></use>
+      </svg>
+      <svg class="icon">
+        <use xlink:href="#icon-light"></use>
+      </svg>
     </div>
   </div>
 </template>
@@ -30,6 +43,13 @@ $color: #007974;
 
 .topNavAndBanner {
   background: linear-gradient(145deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+}
+
+.features{
+  > svg{
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .banner {
