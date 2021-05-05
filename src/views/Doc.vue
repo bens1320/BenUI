@@ -43,6 +43,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -76,14 +79,22 @@ aside {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 70px 16px 16px;
+  padding-top: 70px;
   height: 100%;
   > h2 {
     margin-bottom: 4px;
+    padding: 0 16px;
   }
   > ol {
     > li {
-      padding: 4px 0;
+      >a {
+        display: block;
+        padding: 4px 16px;
+        text-decoration: none;
+      }
+      .router-link-active{
+        background: white;
+      }
     }
   }
 }
